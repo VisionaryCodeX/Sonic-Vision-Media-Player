@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sonic-VisionMediaPlayer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="media-player">
+			<h1>Sonic-VisionMediaPlayer</h1>
+			<div class="video-container">
+				<video id="myVideo" controls>
+					<source src="video.mp4" type="video/mp4">
+					<source src="video.webm" type="video/webm">
+				</video>
+			</div>
+			<div class="controls">
+				<button onclick="playPause()">Play/Pause</button>
+				<button onclick="makeFullScreen()">Full Screen</button>
+				<input type="range" id="volume" onchange="setVolume()" min="0" max="1" step="0.1" value="1">
+			</div>
+		</div>
+	</div>
+</body>
+    </html>
